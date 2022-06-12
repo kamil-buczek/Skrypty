@@ -1,0 +1,120 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: history_of_esport
+  examples: |
+    - First topic
+    - History o E-sport
+    - Story of esport
+    - What is E-sport?
+    - How long has e-sport existed?
+    - I want to hear abot the history
+    - Show me history
+    - History
+    - Let it be history
+
+- intent: history_reaction_bad
+  examples: |
+    - That was really bad
+    - Horrible history
+    - History is really boring
+    - It's too short
+    - It's too long
+    - I am bored
+    - So bad
+    - Bad history
+    - It was not good
+
+- intent: history_reaction_good
+  examples: |
+    - That was great
+    - Amusing history
+    - History i very interesting
+    - It's really good
+    - Nice history
+    - Good history
+
+- intent: available_games
+  examples: |
+    - Show me available games please
+    - Can I please see available games?
+    - I want to see list of available games?
+    - What games are available?
+    - What games are on your list?
+
+- intent: best_award
+  examples: |
+    - which game has the best prizes
+    - which game has the best awards
+    - what is the highest award I can get
+    - what is the best possible award
+    - how much money the most I can get
+
+- intent: choose_game
+  examples: |
+    - I want to choose game
+    - I choose to play
+    - I want game 
+    - I choose the game
+    - I am choosing to play
+    - Is my choice
+
+- intent: most_known_games
+  examples: |
+    - Show me most known games
+    - I want see most known games
+    - I would like to see most known games
+    - Could you please show me the most known games
+
+- intent: eldest_game
+  examples: |
+    - What is the eldest game?
+    - Which game is the oldest?
+    - which game was created earliest
+    - oldest game?
+    
+    
+
+- intent: show_topics
+  examples: |
+    - Go back to topics
+    - What else we can talk about?
+    - Change topic
+    - Let's talk about something else
+    - What are another topics
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

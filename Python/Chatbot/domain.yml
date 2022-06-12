@@ -1,0 +1,84 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bot_challenge
+- history_of_esport
+- show_topics
+- history_reaction_good
+- history_reaction_bad
+- available_games
+- best_award
+- choose_game
+- most_known_games
+- eldest_game
+
+responses:
+  utter_greet:
+  - text: |
+      Hello. I am E-sport bot. We can talk about
+      - History of E-sport
+      - The most known E-sport games
+      - List of available games
+      Ask me about these topics and i will try to answer my best
+  utter_history_of_esport:
+    - text: |
+        Esports, short for electronic sports, is a form of competition using video games. 
+        Esports often takes the form of organized, multiplayer video game competitions, particularly between professional players, 
+        individually or as teams. Although organized competitions have long been a part of video game culture, 
+        these were largely between amateurs until the late 2000s, when participation by 
+        professional gamers and spectatorship in these events through live streaming saw a 
+        large surge in popularity. By the 2010s, esports was a significant factor in the video game industry, 
+        with many game developers actively designing and providing funding for tournaments and other events.
+  utter_show_topics:
+    - text: |
+        Topics are
+        - History of E-sport
+        - The most known E-sport games
+        - List of available games
+
+  utter_history_reaction_good:
+    - text: Thank you so much, that's really nice you like it
+    - text: I appreciate your opinion. It's very important to me
+  utter_history_reaction_bad:
+    - text: That is so sad, but i will try to correct myself
+    - text: Your opinion hurts me so much. I tried my best
+
+  utter_available_games:
+    - text: |
+        List of available games
+        - Wow arena championship
+        - Hearthstone Grandmasters
+        - Major CS GO
+
+  utter_best_award:
+    - text: 'Wow tournaments has award worth 1 000 000$'
+    - text: 'The best award belongs to Wow tournaments. It is 1 million dollars'
+
+  utter_choose_game:
+    - text: 'Thank you for you response. Your choice will be saved.'
+    - text: 'Great choice. Let me save it in our database'
+
+  utter_most_known_games:
+    - text: |
+        Most known e-sport games are
+        - Dota 2
+        - Counter Strike GO
+        - Fortnite
+        - Legue of Legends
+        - Arena of Valor
+
+  utter_eldest_game:
+    - text: 'The eldest game is Dota 2'
+    - text: 'Dota 2 is the eldest game of all three'
+
+  utter_goodbye:
+  - text: Bye
+  - text: See you
+  - text: Goodbye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  - text: You are right. I am Rasa bot

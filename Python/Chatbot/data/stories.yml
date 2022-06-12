@@ -1,0 +1,43 @@
+version: "3.1"
+
+stories:
+
+- story: history of E-sport, good reaction
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: history_of_esport
+    - action: utter_history_of_esport
+    - intent: history_reaction_good
+    - action: utter_history_reaction_good
+
+
+- story: history of E-sport, bad reaction
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: history_of_esport
+    - action: utter_history_of_esport
+    - intent: history_reaction_bad
+    - action: utter_history_reaction_bad
+
+
+- story: available games
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: available_games
+    - action: utter_available_games
+    - intent: best_award
+    - action: utter_best_award
+    - intent: choose_game
+    - action: utter_choose_game
+
+- story: most_know_games
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: most_known_games
+    - action: utter_most_known_games
+    - intent: eldest_game
+    - action: utter_eldest_game
